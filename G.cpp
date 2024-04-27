@@ -22,7 +22,7 @@ int orientation(point p, point q, point r)
               (q.x - p.x) * (r.y - q.y); 
   
     if ((int)val == 0) return 0;
-  
+	
     return (val > 0)? 1: 2;
 }
 
@@ -35,13 +35,9 @@ bool doIntersect(point p1, point q1, point p2, point q2)
     int o4 = orientation(p2, q2, q1); 
   
     if (o1 != o2 && o3 != o4) return true; 
-  
     if (o1 == 0 && onSegment(p1, p2, q1)) return true; 
-  
     if (o2 == 0 && onSegment(p1, q2, q1)) return true; 
-  
     if (o3 == 0 && onSegment(p2, p1, q2)) return true; 
-  
     if (o4 == 0 && onSegment(p2, q1, q2)) return true; 
   
     return false;
@@ -67,11 +63,11 @@ int main() {
 	map<line, ld> W;
 	for (int i = 0; i < N; i++) {
 		cin >> VL[i].x.x >> VL[i].x.y >> VL[i].y.x >> VL[i].y.y;
-		VP.push_back({VL[i].x.x, VL[i].x.y});
-		VP.push_back({VL[i].y.x, VL[i].y.y});
+		VP.push_back(VL[i].x);
+		VP.push_back(VL[i].y);
 	}
-	VP.push_back({S.x, S.y});
-	VP.push_back({F.x, F.y});
+	VP.push_back(S);
+	VP.push_back(F);
 	ll n_points = VP.size();
 
 	for (int i = 0; i < n_points - 1; i++) {
@@ -117,17 +113,4 @@ int main() {
 
 	// for (point p: VP) {cout << p.x << "," << p.y << " -> " << dist[p] << "\n";}
 	cout << dist[F];
-
 }
-
-/*
-0 0 22 0
-2
-12 -5 7 15
-19 -20 18 3
-
-
-2 2 6 3
-1
-4 0 4 4
-*/
