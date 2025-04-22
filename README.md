@@ -1,7 +1,7 @@
 # FindIT-2024-Competitive-Programming-Solution
 My solution for several problems of [FindIT](https://www.instagram.com/findit_ugm/?hl=en) 2024 Competitive Programming.
 
-## Problemsets
+## Problemset
 [A - Mencari Bom](https://drive.google.com/file/d/1ejO_YB8UYhmnYklFJCerRW2bWeqFuu42/view?usp=drive_link)<br>
 [B - Mencari Ubin](https://drive.google.com/file/d/1MQUHFWoapkyU4j16HBMXkYNxfj8OTyQi/view?usp=drive_link)<br>
 [C - Mencari Nilai](https://drive.google.com/file/d/12avtb5nV1CybKJmZCwJ6b8CZ1xFmYzYf/view?usp=drive_link)<br>
